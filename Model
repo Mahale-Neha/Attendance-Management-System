@@ -1,0 +1,15 @@
+
+public class Student {
+    private int id;
+    private String name;
+  
+}
+
+
+public class Attendance {
+    private int id;
+    private int studentId;
+    private LocalDate date;
+    private boolean present;
+  
+}

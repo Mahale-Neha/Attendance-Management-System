@@ -1,0 +1,7 @@
+
+public interface AttendanceDAO {
+    void markAttendance(Attendance attendance);
+    List<Attendance> getAttendanceByDate(LocalDate date);
+    List<Attendance> getAttendanceByStudent(int studentId);
+   
+}

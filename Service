@@ -1,0 +1,17 @@
+
+public class AttendanceService {
+    private AttendanceDAO attendanceDAO;
+
+    public void markAttendance(Attendance attendance) {
+        attendanceDAO.markAttendance(attendance);
+    }
+
+    public List<Attendance> getAttendanceByDate(LocalDate date) {
+        return attendanceDAO.getAttendanceByDate(date);
+    }
+
+    public List<Attendance> getAttendanceByStudent(int studentId) {
+        return attendanceDAO.getAttendanceByStudent(studentId);
+    }
+
+}
